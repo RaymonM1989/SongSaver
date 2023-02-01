@@ -24,7 +24,7 @@ function Main()
     return (
         <main className="main">
             <InputBar addSong={addSong} />
-            <List songArray={songArray} deleteSong={deleteSong}/>
+            <List songArray={songArray} setSongArray={setSongArray} deleteSong={deleteSong}/>
         </main>
     );
 }
