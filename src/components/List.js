@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-function List( {songArray} )
+function List( props )
 {
     return (
         <div>
@@ -13,14 +13,14 @@ function List( {songArray} )
                 <div className="titleElement fifthCol" id="remove"></div>
             </div>
 
-            {songArray.map(song => 
+            {props.songArray.map(song => 
             (
                 <div className="listRow" key={song.key}>
                     <div className="listElement firstCol">{song.title}</div>
                     <div className="listElement secondCol">{song.artist}</div>
                     <div className="listElement thirdCol">{song.genre}</div>
                     <div className="listElement fourthCol imgContainer"><img src={song.ratingImg} alt={song.rating}/></div>
-                    <div className="listElement fifthCol"></div>
+                    <div className="listElement fifthCol imgContainer"><button onClick={() => props.deleteSong(song.key)}><img src="img/delete.png" alt="Remove Song" /></button></div>
                 </div>
             ))}
         </div>

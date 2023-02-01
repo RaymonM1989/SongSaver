@@ -165,6 +165,13 @@
     border-bottom: 1px solid rgb(0, 133, 221);
 }
 
+.listRow button
+{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
 .listElement
 {
     line-height: 2rem; 

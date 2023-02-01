@@ -11,14 +11,22 @@ function Main()
     const addSong = (song) => 
     {
         setSongArray([song, ...songArray])
-    }
+    };
 
+
+    function deleteSong(key)
+    {
+        const newSongArray = songArray.filter((song) => song.key !== key);
+        setSongArray(newSongArray);
+    };
+
+    
     return (
         <main className="main">
             <InputBar addSong={addSong} />
-            <List songArray={songArray} />
+            <List songArray={songArray} deleteSong={deleteSong}/>
         </main>
-    )
+    );
 }
 
 export default Main;
