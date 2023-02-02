@@ -4,7 +4,7 @@ import List                 from './List.js';
 import baseSongArray        from './SongDatabase.js';
 
 
-function Main()
+export const Main = () =>
 {
     const [songArray, setSongArray] = useState(baseSongArray)
 
@@ -29,4 +29,4 @@ function Main()
     );
 }
 
-export default Main;
+// export default Main;
