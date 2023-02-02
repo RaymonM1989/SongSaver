@@ -43,6 +43,7 @@ function InputBarRenderer(props)
                     <option value="Dance">Dance</option>
                     <option value="Disco">Disco</option>
                     <option value="Folk">Folk</option>
+                    <option value="Gospel">Gospel</option>
                     <option value="Grunge">Grunge</option>
                     <option value="Hip-Hop">Hip-Hop</option>
                     <option value="Indie">Indie</option>
